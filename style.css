@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar {
-    background-color: cornflowerblue;
+    background-color: #2d92d4;
     color: white;
     font-size: 1.5em;
     grid-row: 1 / 3;
@@ -38,9 +38,71 @@ body {
 }
 
 .header {
-    background-color: burlywood;
+    background-color: white;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 2px 4px 8px gray;
+}
+
+/* .header > div {
+    border: 2px solid red;
+} */
+
+.search-bar input {
+    width: 500px;
+}
+
+.notifications {
+    justify-self: end;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 2px;
+    align-content: center;
+}
+
+/* .greeting * {
+    border: 2px solid green;
+} */
+
+.greeting p {
+    align-self: end;
+}
+
+.greeting p,
+.greeting h1 {
+    margin: 0;
+}
+
+.profile-pic{
+    max-width: 100px;
+    border-radius: 50%;
+    grid-row: 1 / 3;
+}
+
+.small-pic {
+    max-width: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    background-color: #2d92d4;
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 .main-content{
-    background-color: blanchedalmond;
+    background-color: #e2e8f0;
 }
