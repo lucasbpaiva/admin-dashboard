@@ -1,20 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 300px 4fr;
     grid-template-rows: 200px 800px;
 }
 
 .sidebar {
     background-color: #2d92d4;
     color: white;
+    font-weight: 500;
     font-size: 1.5em;
     grid-row: 1 / 3;
     padding: 20px;
@@ -23,17 +27,22 @@ body {
     gap: 20px;
 }
 
-/* .sidebar > div {
+.title, 
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    font-size: 1.6em;
+}
+
+/* .sidebar * {
     border: 2px solid red;
 } */
 
-.modules ul {
-    list-style-type: none;
-    padding: 0;
-    display: grid;
-    gap: 20px;
-}
-
+.modules ul,
 .options ul {
     list-style-type: none;
     padding: 0;
