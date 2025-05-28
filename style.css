@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 300px 4fr;
+    grid-template-columns: 350px 1fr;
     grid-template-rows: 200px 800px;
 }
 
@@ -52,24 +52,44 @@ li {
 
 .header {
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px 50px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
     z-index: 1;
-    box-shadow: 2px 4px 8px gray;
+    box-shadow: 1px 3px 6px gray;
 }
 
 /* .header > div {
     border: 2px solid red;
 } */
 
-.search-bar input {
-    width: 500px;
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="search"] {
+  /* appearance: none; */
+  width: 500px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid lightgray;
+  background-color: rgb(226, 232, 240);
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border: 2px solid #2d92d4;
 }
 
 .notifications {
     justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .greeting {
@@ -100,12 +120,13 @@ li {
 }
 
 .small-pic {
-    max-width: 50px;
+    max-width: 40px;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    gap: 20px;
 }
 
 .buttons > button {
