@@ -12,7 +12,7 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 350px 1fr;
-    grid-template-rows: 200px 800px;
+    grid-template-rows: 200px 1fr;
 }
 
 .sidebar {
@@ -121,6 +121,8 @@ input[type="search"]:focus {
 
 .small-pic {
     max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
 }
 
 .buttons {
@@ -140,8 +142,8 @@ input[type="search"]:focus {
 .main-content{
     background-color: #e2e8f0;
     display: grid;
-    grid-template-columns: 1fr 350px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 300px;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
 .projects {
@@ -160,6 +162,35 @@ input[type="search"]:focus {
 
 .announcements {
     grid-column: 2;
+    padding: 20px;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-content {
+    font-size: 0.7em;
+}
+
+.trending {
+    padding: 20px;
+}
+
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .announcements-card,
@@ -167,7 +198,7 @@ input[type="search"]:focus {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
+    width: 260px;
 }
 
 .project-card {
@@ -175,4 +206,5 @@ input[type="search"]:focus {
     border-radius: 10px;
     padding: 20px;
     height: 150px;
+    border-left: 5px solid rgb(240, 180, 40);
 }
